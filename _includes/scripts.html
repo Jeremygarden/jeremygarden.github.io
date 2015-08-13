@@ -1,0 +1,181 @@
+
+<script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="{{ site.url }}/assets/js/scripts.min.js"></script>
+<script src="{{ site.url }}/assets/js/plugins/typed-custom.js"></script>
+
+
+{% if site.search %}
+
+<script>
+
+$(document).ready(function(){
+
+  $("#toTop").hide();
+  $(window).scroll(function(){
+
+    if( $(this).scrollTop() > 1000 ) {
+        $("#toTop").fadeIn("slow");
+        $("body").addClass("darken");
+    }else{
+        $("#toTop").fadeOut("slow");
+        $("body").removeClass("darken");
+    }
+});
+
+$("#toTop").click(function(event){
+        
+        $('body').animate({scrollTop : 0 } , 600);
+        return false;
+    });
+
+
+});
+
+
+
+
+//smoothScroll
+
+$('a[href^="#"]').on('click', function(event) {
+
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
+
+//  ** typed.js Thanks matt! **
+
+$(function(){
+  $(".welcomeText").empty();
+  $(".welcomeText").typed({
+    strings: ["Hello,", "你好,", "Bonjour,", "¡Hola!", "안녕,", "Ciào,"],
+        typeSpeed: 45, // typing speed
+        backDelay: 650, // pause before backspacing
+        loop: true, // loop on or off (true or false)
+        loopCount: false, // number of loops, false = infinite
+      });
+});
+
+function cursorAnimation() {
+    $('.typed-cursor').animate({
+        opacity: 0
+    }, 'fast', 'swing').animate({
+        opacity: 1
+    }, 'fast', 'swing');
+};
+</script>
+<!-- Jekyll Simple Search option -->
+<script>
+  $(document).ready(function() {
+      $('.search-field').jekyllSearch({
+          jsonFile: '{{ site.url }}/search.json',
+          searchResults: '.search-results',
+          template: '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></a></article></li>',
+          fuzzy: true,
+          noResults: '<p>Nothing found.</p>'
+        });
+  });
+
+  (function( $, window, undefined ) {
+    
+     var bs = {
+          close: $(".close-btn"),
+          searchform: $(".search-form"),
+          canvas: $(".js-menu-screen"),
+          dothis: $('.dosearch')
+      };
+    
+    bs.dothis.on('click', function() {
+      $('.search-wrapper').css({ display: "block" });
+      $('body').toggleClass('no-scroll');
+      bs.searchform.toggleClass('active');
+      bs.searchform.find('input').focus();
+      bs.canvas.toggleClass('is-visible');
+    });
+    
+      bs.close.on('click', function() {
+        $('.search-wrapper').removeAttr( 'style' );
+        $('body').toggleClass('no-scroll');
+        bs.searchform.toggleClass('active');
+        bs.canvas.removeClass('is-visible');
+    });
+  })( jQuery, window );
+
+
+  (function(c){
+    c(window).scroll(function(){
+      var d=2500;
+      var f= c(window).scrollTop();
+      var e= c("#work");
+      if(f>d){e.addClass("darken")}else{e.removeClass("darken")}})})( jQuery );
+</script>
+{% endif %}
+{% if site.owner.google.analytics %}
+<!-- Asynchronous Google Analytics snippet -->
+<script>
+  var _gaq = _gaq || [];
+  var pluginUrl = 
+ '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
+  _gaq.push(['_setAccount', '{{ site.owner.google.analytics }}']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+{% endif %}
+
+<!-- nav scroll snippet -->
+<script>
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('nav').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('nav').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('nav').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+
+
+{% if page.comments or site.comments %}
+  {% include disqus_comments.html %}
+{% endif %}
