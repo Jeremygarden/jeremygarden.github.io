@@ -434,8 +434,10 @@ span + .entry-title {
 
 .footer-wrapper {
 	@include clearfix;
-	margin: 2em auto;
+	margin: -2em auto 1em;
+	
 	text-align: center;
+	height: 70px;
 	font-family: $alt-font;
 	@include font-size(14);
 	font-style: italic;
@@ -476,7 +478,7 @@ span + .entry-title {
 .social-icons {
     
     height: 60px;
-	margin: 1em 0 2em;
+	margin: 1em 0 1em;
 	@include animation-duration(1s);
     @include animation-delay(1.2s);
 	a {
