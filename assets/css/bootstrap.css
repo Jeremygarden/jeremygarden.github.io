@@ -75,6 +75,7 @@
 }
 .col-xs-4 {
   width: 33.33333333%;
+  font-size: :50%;
 }
 .col-xs-3 {
   width: 25%;
@@ -189,6 +190,7 @@
 }
 .col-xs-offset-4 {
   margin-left: 33.33333333%;
+
 }
 .col-xs-offset-3 {
   margin-left: 25%;
@@ -234,6 +236,7 @@
   }
   .col-sm-4 {
     width: 33.33333333%;
+    font-size: :80%;
   }
   .col-sm-3 {
     width: 25%;
