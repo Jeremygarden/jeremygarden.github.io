@@ -75,7 +75,7 @@
 }
 .col-xs-4 {
   width: 33.33333333%;
-  font-size: :50%;
+
 }
 .col-xs-3 {
   width: 25%;
@@ -230,13 +230,14 @@
   .col-sm-6 {
     width: 50%;
     height: 30%;
+
   }
   .col-sm-5 {
     width: 41.66666667%;
   }
   .col-sm-4 {
     width: 33.33333333%;
-    font-size: :80%;
+
   }
   .col-sm-3 {
     width: 25%;
@@ -369,6 +370,7 @@
   .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
     float: left;
   }
+
   .col-md-12 {
     width: 100%;
   }
@@ -395,7 +397,6 @@
   }
   .col-md-4 {
     width: 33.33333333%;
-    height: 25%;
   }
   .col-md-3 {
     width: 25%;
@@ -688,4 +689,5 @@ h2,
 .h2 {
   font-size: 44px;
 }
+
 

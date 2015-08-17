@@ -107,13 +107,6 @@ function cursorAnimation() {
     });
   })( jQuery, window );
 
-
-  (function(c){
-    c(window).scroll(function(){
-      var d=2500;
-      var f= c(window).scrollTop();
-      var e= c("#work");
-      if(f>d){e.addClass("darken")}else{e.removeClass("darken")}})})( jQuery );
 </script>
 {% endif %}
 {% if site.owner.google.analytics %}

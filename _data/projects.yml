@@ -1,5 +1,5 @@
 - name: Medical Mal-Prctice Platform
-  time: Mar 2015 - May 2015
+  time: Nov 2013 - Jan 2014
   url: 
   tagline: Medical Error Reporting System
   tools: Java / Swing GUI
@@ -9,22 +9,57 @@
     url: jeremygarden/
     branch: master
 
-- name: Angular App
-  time: Feb 2015 +
+- name: U.S Airline On-Time Analytics 
+  time: Jan 2015 - Mar 2014 +
   url: 
-  tagline: SPA for a side project
-  tools: Java
+  tagline: Advanced Data Science Project
+  tools: Python (pandas, Scikit-learn), ipython notebook, Tableau and D3.js.
   description: | 
-     NPR Radio
+     Applied ML algorithms to discover some findings on airplane performance.
   github:
     url: jeremygarden/
     branch: master
 
-- name: iTrack NYC Train
-  time: Feb 2015 +
+- name: iTrack Boston Subway
+  time: April 2015 +
   url: 
-  tagline: Crawling real-time fro NY MTA API and update the traffic info.
+  tagline: Crawling real-time from MBTA API and update the traffic info.
   tools: Python, JS, AngularJS.
+  description: | 
+    **Currently in progress..** 
+  github:
+    url: jeremygarden/
+    branch: master
+
+- name: MxCommunity
+  time: Jan 2014 - March 2014 +
+  url: 
+  tagline: Web Development Application Final Project
+  tools: Java, Spring MVC, MySQL
+  description: | 
+   Built the online community for interest-in-common people to connect, chat and posttiny-blog.
+  github:
+    url: jeremygarden/
+    branch: master
+
+- name: B2C Online Shopping Cart
+  time: March 2014 +
+  url: 
+  tagline: Web Development
+  tools: JSP, JDBC Connector
+  description: | 
+   Built the online Shopping Cart with user registration and some CRUD actions.
+  github:
+    url: jeremygarden/
+    branch: master
+
+
+
+- name: Ukulele Tuner
+  time: July 2015 +
+  url: 
+  tagline: A funny but useful website for Ukulele learner to tuner their baby.
+  tools: Python and AngularJS
   description: | 
     **Currently in progress..** 
   github:
@@ -33,7 +68,7 @@
 
 
 - name: jeremylee.xyz
-  time: Dec 2014 - Jan 2015+
+  time: June 2015 - July 2015+
   url: https://jeremylee.xyz/
   tagline: personal online portfolio/blog Hub  
   tools: HTML/CSS, JS, Bootstrap, SASS, jQuery, Jekyll, Markdown

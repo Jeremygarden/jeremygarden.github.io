@@ -434,10 +434,10 @@ span + .entry-title {
 
 .footer-wrapper {
 	@include clearfix;
-	margin: -2em auto 1em;
+	margin: 3em auto 1em;
 	
 	text-align: center;
-	height: 70px;
+    height: 70px;
 	font-family: $alt-font;
 	@include font-size(14);
 	font-style: italic;
