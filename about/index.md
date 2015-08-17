@@ -7,12 +7,14 @@ image:
 
 ---
 
-My name is **Jeremy** and I love new, upcoming technology. I'm currently studying **Information Systems** at the **Northeastern University, Boston**. I enjoy developing and learning about all forms of software, from lower level System/Firmware code to higher level full stack web application development! 
+My name is **Jeremy** and I love new, upcoming technology. I'm currently a candidate for M.S **Information Systems** at the **Northeastern University, Boston**. I enjoy developing and learning about all forms of software to MAKEING AND DOING, especially concerntrate on the cutting-edge web tech and design beautiful internet things on human-centerd side for other's better life.
+
 
 ## Quick Facts:
 
 * Fluent in speaking **English**, with native **Mandarin Chinese**
-* Enjoy **PC gaming**, building and upgrading computers, and staying updated with the latest technologies
+* Enjoy **Reading and Photography** , and staying updated with the latest technologies
+* Also a true sport fanatic, probably stop coding and thinking if a perfectly prime rib is just placed in front of me. 
 
 
 ## Contact Me:

@@ -20,7 +20,7 @@ While fiddling around with building my website, the thought of starting a blog c
 
 I’ll even make this blog into some sort diary; jotting down my experiences as I journey through this thing called life. Sounds like a plan. 
 
-Well, I better introduce myself. My name is Jeremy (Mingxuan) Li.
+Well, I better introduce myself. My name is Jeremy (Mingxuan) Li. 
 
 Let’s make this blog about the evolving perceptions of my life and mentality.
 
