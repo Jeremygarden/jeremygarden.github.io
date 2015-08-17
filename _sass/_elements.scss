@@ -549,6 +549,8 @@ table {
 
 .photo-box {
     margin: 0 0 30px 0;
+    max-width: 300px; 
+    max-height: 300px;
 }
 
 .photo-box .image-wrap img {
