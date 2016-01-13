@@ -1,6 +1,33 @@
 [
 	
 		{
+		  "title"      : "Thoughts about Google Material Design",
+		  "category"   : "",
+      "tags"       : "Design and Web",
+		  "url"        : "/blog/Thoughts_about_Google_Material_Design/",
+		  "date"       : "2015-12-17 00:00:00 -0500",
+		  "shortdate"  : "December 17, 2015"
+		} ,
+	
+		{
+		  "title"      : "Git common use",
+		  "category"   : "",
+      "tags"       : "Git and Coding",
+		  "url"        : "/blog/Git%20common%20use/",
+		  "date"       : "2015-11-21 00:00:00 -0500",
+		  "shortdate"  : "November 21, 2015"
+		} ,
+	
+		{
+		  "title"      : "Sharing some Python Trick",
+		  "category"   : "",
+      "tags"       : "Coding, Python, and Note",
+		  "url"        : "/blog/Sharing_some_Python_tricks/",
+		  "date"       : "2015-08-08 00:00:00 -0400",
+		  "shortdate"  : "August 08, 2015"
+		} ,
+	
+		{
 		  "title"      : "Hello World,",
 		  "category"   : "",
       "tags"       : "Life and Note",

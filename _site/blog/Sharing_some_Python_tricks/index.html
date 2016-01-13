@@ -1,0 +1,443 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>Sharing some Python Trick &#8211; Jeremy Li</title>
+<meta name="description" content="Useful tips that were found when wrote Python">
+<meta name="keywords" content="Coding, Python, Note">
+
+  
+
+<!-- Twitter Cards -->
+<meta name="twitter:title" content="Sharing some Python Trick">
+<meta name="twitter:description" content="Useful tips that were found when wrote Python">
+<meta name="twitter:site" content="@Jeremy23_Zen">
+
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="/images/mushroom.jpg">
+
+<!-- Open Graph -->
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Sharing some Python Trick">
+<meta property="og:description" content="Useful tips that were found when wrote Python">
+<meta property="og:url" content="/blog/Sharing_some_Python_tricks/">
+<meta property="og:site_name" content="Jeremy Li">
+
+
+
+
+
+<link rel="canonical" href="/blog/Sharing_some_Python_tricks/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Jeremy Li Feed">
+
+
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/bootstrap.css">
+<!-- Webfonts -->
+<script src="//use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop nav">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/projects/" >Projects</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/portforlio/Dish+.pdf" >Portforlio</a></li>
+		  
+        <li class="dosearch"><span><i class="fa fa-search"></i> Search</span></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<div class="search-wrapper">
+  <div class="search-form">
+    <input type="text" class="search-field" placeholder="Search...">
+    <button class="close-btn"><i class="fa fa-times-circle fa-2x"></i></button>
+    <ul class="search-results post-list"></ul><!-- /.search-results -->
+  </div><!-- /.search-form -->
+</div><!-- ./search-wrapper -->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="/" class="site-logo" rel="home" title="Jeremy Li"><img src="/images/logo.jpg" width="200" height="200" alt="Jeremy Li logo" class="animated fadeInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img style="max-height: 400px" src="/images/mushroom.jpg" class="entry-feature-image" alt="Sharing some Python Trick" >
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="/tags/#Coding" title="Pages tagged Coding">Coding</a>&nbsp;&bull;&nbsp;<a href="/tags/#Python" title="Pages tagged Python">Python</a>&nbsp;&bull;&nbsp;<a href="/tags/#Note" title="Pages tagged Note">Note</a></span>
+        
+          <h2 class="entry-title">Sharing some Python Trick</h2>
+        
+      </header>
+      <footer class="entry-meta">
+        
+          
+        
+          <img src="/images/me.jpg" class="bio-photo" alt="Jeremy Li bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Jeremy Li</span></span>
+        <span class="entry-date date published"><time datetime="2015-08-08T00:00:00-04:00"><i class="fa fa-calendar-o"></i> August 08, 2015</time></span>
+        
+
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=Coding,Python,Note&amp;text=Sharing%20some%20Python%20Trick&amp;url=/blog/Sharing_some_Python_tricks/" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=/blog/Sharing_some_Python_tricks/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=/blog/Sharing_some_Python_tricks/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
+      <div class="entry-content">
+        <p>1.How to easily get the index &amp; value from sequences</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="n">my_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">]</span>
+   <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">ele</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">my_list</span><span class="p">):</span>
+       <span class="k">print</span> <span class="s">&quot;index&quot;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span><span class="s">&quot;element&quot;</span><span class="p">,</span><span class="n">ele</span><span class="p">;</span>
+
+   <span class="k">for</span> <span class="n">i</span><span class="p">,</span><span class="n">ele</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">li</span><span class="p">[::</span><span class="o">-</span><span class="mi">1</span><span class="p">]);</span>
+       <span class="k">print</span> <span class="s">&quot;index&quot;</span><span class="p">,</span><span class="n">i</span><span class="p">,</span> <span class="s">&quot;element&quot;</span><span class="p">,</span> <span class="n">ele</span>
+
+<span class="c">#dic is different</span>
+
+<span class="n">my_dic</span> <span class="o">=</span> <span class="p">{</span><span class="s">&#39;emp_id&#39;</span><span class="p">:</span><span class="s">&#39;007&#39;</span><span class="p">,</span><span class="s">&#39;emp_name&#39;</span><span class="p">:</span> <span class="s">&#39;coop&#39;</span><span class="p">,</span> <span class="s">&#39;city&#39;</span><span class="p">:</span><span class="s">&#39;bos&#39;</span><span class="p">}</span>
+   <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">ele</span> <span class="ow">in</span> <span class="n">my_dic</span><span class="o">.</span><span class="n">iteritems</span><span class="p">():</span>
+	   <span class="k">print</span> <span class="n">i</span><span class="p">,</span> <span class="s">&quot;:&quot;</span><span class="p">,</span> <span class="n">ele</span></code></pre></div>
+
+<p>2.Differences among deleting elements from list</p>
+
+<ul>
+  <li>del: according to the given index without returning the values.</li>
+  <li>pop: according to the given index with returning the values, otherwise directly wipe out the last element and return its value.</li>
+  <li>remove: according the value of the elements with returning None.</li>
+</ul>
+
+<p>3.(Easier way)counting in the sequence </p>
+
+<p>What if I have to count out the duplicates from the sequence?</p>
+
+<p>The common code might be:</p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">get_counts</span><span class="p">(</span><span class="n">sequence</span><span class="p">):</span>    
+    <span class="n">counts</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">sequence</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">counts</span><span class="p">:</span>
+            <span class="n">counts</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">counts</span><span class="p">[</span><span class="n">x</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">return</span> <span class="n">counts</span>
+
+<span class="k">def</span> <span class="nf">top_counts</span><span class="p">(</span><span class="n">counts</span><span class="p">,</span><span class="n">n</span><span class="o">=</span><span class="mi">10</span><span class="p">):</span>   
+    <span class="n">value_key_pairs</span> <span class="o">=</span> <span class="p">[(</span><span class="n">number</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span> <span class="k">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">number</span> <span class="ow">in</span> <span class="n">counts</span><span class="o">.</span><span class="n">items</span><span class="p">()]</span>
+    <span class="n">value_key_pairs</span><span class="o">.</span><span class="n">sort</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">value_key_pairs</span><span class="p">[</span><span class="o">-</span><span class="n">n</span><span class="p">:]</span></code></pre></div>
+
+<p>There is a class called collections.Counter in Python Collections Library which can definitely simplify the code: </p>
+
+<div class="highlight"><pre><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">Counter</span>
+
+<span class="n">counts</span> <span class="o">=</span> <span class="n">Counter</span><span class="p">(</span><span class="n">sequence</span><span class="p">)</span>
+<span class="n">counts</span><span class="o">.</span><span class="n">most_common</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span></code></pre></div>
+
+<p>More is on the way….<br />
+Record my faults and results for help others.</p>
+
+<p>Jeremy</p>
+
+
+        <div id="disqus_thread"></div><!-- /#disqus_thread -->
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="/blog/hello_world/" class="btn" title="Hello World,">Previous</a>
+      
+      
+        <a href="/blog/Git%20common%20use/" class="btn" title="Git common use">Next</a>
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+
+
+<div class="social-icons animated fadeIn" style="text-align: center">
+
+  <a href="http://twitter.com/Jeremy23_Zen" title="Jeremy Li on Twitter" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
+
+
+
+  <a href="http://linkedin.com/in/Jeremyli23" title="Jeremy Li on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+
+
+
+  <a href="http://github.com/Jeremygarden" title="Jeremy Li on Github" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>
+
+
+
+
+</div>
+<button id="toTop" style="display: block;"> <i class="fa fa-angle-double-up fa-5x"></i> </button>
+
+<div><span>&copy; 2016 .<i class="fa fa-heartbeat blood"></i>&nbsp;Jeremy Li. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a>.</span></div>
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+<script src="/assets/js/plugins/typed-custom.js"></script>
+
+
+
+
+<script>
+
+$(document).ready(function(){
+
+  $("#toTop").hide();
+  $(window).scroll(function(){
+
+    if( $(this).scrollTop() > 1000 ) {
+        $("#toTop").fadeIn("slow");
+        $("body").addClass("darken");
+    }else{
+        $("#toTop").fadeOut("slow");
+        $("body").removeClass("darken");
+    }
+});
+
+$("#toTop").click(function(event){
+        
+        $('body').animate({scrollTop : 0 } , 600);
+        return false;
+    });
+
+
+});
+
+
+
+
+//smoothScroll
+
+$('a[href^="#"]').on('click', function(event) {
+
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
+
+//  ** typed.js Thanks matt! **
+
+$(function(){
+  $(".welcomeText").empty();
+  $(".welcomeText").typed({
+    strings: ["Hello,", "你好,", "Bonjour,", "¡Hola!", "안녕,", "Ciào,"],
+        typeSpeed: 45, // typing speed
+        backDelay: 650, // pause before backspacing
+        loop: true, // loop on or off (true or false)
+        loopCount: false, // number of loops, false = infinite
+      });
+});
+
+function cursorAnimation() {
+    $('.typed-cursor').animate({
+        opacity: 0
+    }, 'fast', 'swing').animate({
+        opacity: 1
+    }, 'fast', 'swing');
+};
+</script>
+<!-- Jekyll Simple Search option -->
+<script>
+  $(document).ready(function() {
+      $('.search-field').jekyllSearch({
+          jsonFile: '/search.json',
+          searchResults: '.search-results',
+          template: '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></a></article></li>',
+          fuzzy: true,
+          noResults: '<p>Nothing found.</p>'
+        });
+  });
+
+  (function( $, window, undefined ) {
+    
+     var bs = {
+          close: $(".close-btn"),
+          searchform: $(".search-form"),
+          canvas: $(".js-menu-screen"),
+          dothis: $('.dosearch')
+      };
+    
+    bs.dothis.on('click', function() {
+      $('.search-wrapper').css({ display: "block" });
+      $('body').toggleClass('no-scroll');
+      bs.searchform.toggleClass('active');
+      bs.searchform.find('input').focus();
+      bs.canvas.toggleClass('is-visible');
+    });
+    
+      bs.close.on('click', function() {
+        $('.search-wrapper').removeAttr( 'style' );
+        $('body').toggleClass('no-scroll');
+        bs.searchform.toggleClass('active');
+        bs.canvas.removeClass('is-visible');
+    });
+  })( jQuery, window );
+
+</script>
+
+
+
+<!-- nav scroll snippet -->
+<script>
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('nav').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('nav').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('nav').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jeremyleexyz'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+	        
+
+</body>
+</html>

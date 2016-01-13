@@ -2,7 +2,7 @@
 
 title: Jeremy Li
 locale: en_US
-description: A Front-End Developer, UI/UX Designer with built-in empathy, passion and love.
+description: A Front-End Engineer, UI/UX Designer with built-in empathy, passion and love.
 logo: logo.jpg
 me: me.jpg
 search: true
@@ -11,6 +11,11 @@ search: true
 
 permalink:   /:categories/:title/
 markdown:    kramdown
+kramdown:
+  input:         GFM
+  auto_ids:      true
+  footnote_nr: 1
+  use_coderay: false
 highlighter: pygments
 sass:
   sass_dir: _sass
@@ -18,13 +23,6 @@ sass:
 
 gems:
   - jekyll-sitemap
-
-kramdown:
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..2
-  use_coderay: false
 
 include: [".htaccess"]
 exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md", "vendor"]
