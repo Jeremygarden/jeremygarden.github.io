@@ -7,7 +7,7 @@ image:
 
 ---
 
-My name is **Jeremy** and I love new, upcoming technology. I'm currently a candidate for M.S **Information Systems** at the **Northeastern University, Boston**. I enjoy developing and learning about all forms of software to MAKEING AND DOING, especially concerntrate on the cutting-edge web tech and design beautiful internet things on human-centerd side for other's better life.
+My name is **Jeremy** and I love new, upcoming technology. I'm currently a candidate for M.S **Information Systems** at the **Northeastern University, Boston**. I enjoy developing and learning about all forms of software to MAKING AND DOING, especially concerntrate on the cutting-edge web tech and design beautiful internet things on human-centerd side for other's better life.
 
 
 ## Quick Facts:
@@ -15,6 +15,7 @@ My name is **Jeremy** and I love new, upcoming technology. I'm currently a candi
 * Fluent in speaking **English**, with native **Mandarin Chinese**
 * Enjoy **Reading and Photography** , and staying updated with the latest technologies
 * Also a true sport fanatic, probably stop coding and thinking if a perfectly prime rib is just placed in front of me. 
+* Dog&Cat lover. (Might say no to any birds)
 
 
 ## Contact Me:
