@@ -2,7 +2,7 @@
 layout: post
 title: "Thoughts about Google Material Design"
 author: me
-excerpt: "Little background info about me"
+excerpt: "UX world and Design thinking..."
 categories: blog
 tags: [Design, Web]
 modified:
