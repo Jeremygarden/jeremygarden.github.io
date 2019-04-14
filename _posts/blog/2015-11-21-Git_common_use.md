@@ -9,7 +9,7 @@ modified:
 image:
   feature: mushroom.jpg
   <!-- credit: WeGraphics -->
-  <!-- creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/ -->
+  <!-- creditlink: https://wegraphics.net/downloads/free-ultimate-blurred-background-pack/ -->
 share: true
 comments: true
 ---
@@ -19,7 +19,7 @@ Git is one of the beautiful things if you act as a dev on the stage.
 I have nothing to say except love it.
 
 But this post is coming across some frequently used commands. Just tagged as my notes for review.
-![git daily workflow](http://1.bp.blogspot.com/--uNcah6YUSw/UZaB5xCzMNI/AAAAAAAAAhs/khSzRB0MIkc/s1600/git_everthing_is_local.png)
+![git daily workflow](https://1.bp.blogspot.com/--uNcah6YUSw/UZaB5xCzMNI/AAAAAAAAAhs/khSzRB0MIkc/s1600/git_everthing_is_local.png)
 
 * git init - initialise (create) a repository
 * git clone - copy an existing repository
@@ -35,7 +35,7 @@ But this post is coming across some frequently used commands. Just tagged as my 
 * git pull /path/to/some_other_project new_version # pull changes from an existing git repository and merge them into a branch  
 * git fetch /path/to/some_other_project master # pull changes from an existing repository without merging 
 
-The [clear image](http://members.sange.fi/~atehwa/slides/git-slides.html) from Panu, his Git Training shows the basic and daily process if you need to modify, update, communicate between local working directory and remote repository.
+The [clear image](https://members.sange.fi/~atehwa/slides/git-slides.html) from Panu, his Git Training shows the basic and daily process if you need to modify, update, communicate between local working directory and remote repository.
 
 Furthermore,
 Git is a huge gem for team collaboration. Everyone has to touch it in order to working efficiently and effectively.
@@ -52,6 +52,6 @@ Here is the workflow model that demostrate the project releasing framework. Ther
 
 [Atlassian official tutorials](https://www.atlassian.com/pt/git/workflows#!workflow-gitflow)
 
-[My favorite one with awesome interactive effects](http://pcottle.github.io/learnGitBranching/)
+[My favorite one with awesome interactive effects](https://pcottle.github.io/learnGitBranching/)
 
 You gotta check this out right now!

@@ -40,6 +40,6 @@ There are several basic ideas came out of my mind and I think it’s noteworthy 
 5. Encourage team members to get some data or insights through the code review and expand transparency, which could possibly reduce process shit in the long run.
  
 From PO’s point of view, It’s likely getting highly subjective things to evaluate the incentives that development team deliver. Are we still great software engineers if we ship the sloppy hacky code when we don’t have too much runway? or we are just sticking around the standards by writing beautiful code given loads of time.
-![bless code review](http://jameelnabbo.com/wp-content/uploads/2018/05/1_nxXw5ViikNF2tIzIs21qlw-1000x559.png)
+![bless code review](https://jameelnabbo.com/wp-content/uploads/2018/05/1_nxXw5ViikNF2tIzIs21qlw-1000x559.png)
 
 There are tons of solid materials could be a gold guide, I mean generally for code reviews in most cases. But I am not going to draft a email with a long list of hyperlinks then spread to the team. (I know it doesn’t always work even if you do a funny engineering survey or questionnaire.) I want to figure out why and really talk to key team members and discuss a viable approach for us.

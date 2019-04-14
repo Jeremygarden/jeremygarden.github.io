@@ -1,0 +1,369 @@
+<!doctype html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if (IE 7)&!(IEMobile)]><html class="no-js lt-ie9 lt-ie8" lang="en"><![endif]-->
+<!--[if (IE 8)&!(IEMobile)]><html class="no-js lt-ie9" lang="en"><![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"><!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<title>To be a pushover or a nitpicker, It's a question. &#8211; Jeremy Li</title>
+<meta name="description" content="What’s happening with engineering code reviews?">
+<meta name="keywords" content="Tech, PM">
+
+  
+
+
+<link rel="canonical" href="/blog/Code_review_thoughts/">
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Jeremy Li Feed">
+
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="stylesheet" href="/assets/css/bootstrap.css">
+<!-- Webfonts -->
+<script src="https://use.edgefonts.net/source-sans-pro:n2,i2,n3,i3,n4,i4,n6,i6,n7,i7,n9,i9;source-code-pro:n4,n7;volkhov.js"></script>
+
+<meta http-equiv="cleartype" content="on">
+
+<!-- HTML5 Shiv and Media Query Support -->
+<!--[if lt IE 9]>
+  <script src="/assets/js/vendor/html5shiv.min.js"></script>
+  <script src="/assets/js/vendor/respond.min.js"></script>
+<![endif]-->
+
+<!-- Modernizr -->
+<script src="/assets/js/vendor/modernizr-2.7.1.custom.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<!-- Icons -->
+<!-- 16x16 -->
+<link rel="shortcut icon" href="/favicon.ico">
+<!-- 32x32 -->
+<link rel="shortcut icon" href="/favicon.png">
+<!-- 57x57 (precomposed) for iPhone 3GS, pre-2011 iPod Touch and older Android devices -->
+<link rel="apple-touch-icon-precomposed" href="/images/apple-touch-icon-precomposed.png">
+<!-- 72x72 (precomposed) for 1st generation iPad, iPad 2 and iPad mini -->
+
+
+</head>
+
+<body id="post">
+
+<div class="navigation-wrapper">
+	<nav role="navigation" id="site-nav" class="animated drop nav">
+	    <ul>
+      
+		    
+		        
+		    
+		    <li><a href="/about/" >About</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/projects/" >Projects</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/blog/" >Blog</a></li>
+		  
+		    
+		        
+		    
+		    <li><a href="/portforlio/Dish+.pdf" >Portforlio</a></li>
+		  
+        <li class="dosearch"><span><i class="fa fa-search"></i> Search</span></li>
+	    </ul>
+	</nav>
+</div><!-- /.navigation-wrapper -->
+
+<!--[if lt IE 9]><div class="upgrade"><strong><a href="http://whatbrowser.org/">Your browser is quite old!</strong> Why not upgrade to a different browser to better enjoy this site?</a></div><![endif]-->
+
+<div class="search-wrapper">
+  <div class="search-form">
+    <input type="text" class="search-field" placeholder="Search...">
+    <button class="close-btn"><i class="fa fa-times-circle fa-2x"></i></button>
+    <ul class="search-results post-list"></ul><!-- /.search-results -->
+  </div><!-- /.search-form -->
+</div><!-- ./search-wrapper -->
+
+<header class="masthead">
+	
+		<div class="wrap">
+			<a href="/" class="site-logo" rel="home" title="Jeremy Li"><img src="/images/logo.jpg" width="200" height="200" alt="Jeremy Li logo" class="animated fadeInDown"></a>
+		</div>
+	
+</header><!-- /.masthead -->
+
+
+<div class="js-menu-screen menu-screen"></div>
+
+<div id="main" role="main">
+  <article class="hentry">
+    <img style="max-height: 400px" src="/images/mushroom.jpg" class="entry-feature-image" alt="To be a pushover or a nitpicker, It's a question." >
+    <div class="entry-wrapper">
+      <header class="entry-header">
+        <span class="entry-tags"><a href="/tags/#Tech" title="Pages tagged Tech">Tech</a>&nbsp;&bull;&nbsp;<a href="/tags/#PM" title="Pages tagged PM">PM</a></span>
+        
+          <h2 class="entry-title">To be a pushover or a nitpicker, It's a question.</h2>
+        
+      </header>
+      <footer class="entry-meta">
+        
+          
+        
+          <img src="/images/me.jpg" class="bio-photo" alt="Jeremy Li bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Jeremy Li</span></span>
+        <span class="entry-date date published"><time datetime="2018-11-16T00:00:00-05:00"><i class="fa fa-calendar-o"></i> November 16, 2018</time></span>
+        
+
+        <span class="entry-comments"><i class="fa fa-comment-o"></i> <a href="#disqus_thread">Comment</a></span>
+      </footer>
+      <div class="entry-content">
+        <p>Recently my team is getting to be a hot potato around in the eng department since a lot of customer features/issues raised up to leadership during our SAFe Planning Conference. The solely purpose to have a team here is for better customer/developer experience. Is that super cool? It’s just my thing to get insights from frontier with real users.Nothing change too much in my daily routine except being hustler around more often. But I noticed a subtle interesting process, which is our code review. This post is aiming to share some helpful thoughts from multiple hats, like developer’s mind and product owner’s mind.(assume I’m in his shoes.)</p>
+
+<p><img src="https://memegenerator.net/img/instances/37612347/im-chuck-norris-i-approve-of-this-code-review.jpg" alt="Bless Code review" /></p>
+
+<p>Definitely not the best practice on my team, but what’s the root cause for non-effective way and why we cannot get rid of it earlier on, and most importantly — how can we do it better in the future?</p>
+
+<p>I try to summarized into a few aspects we might need to highlight and to face it honestly as a whole development team.</p>
+
+<h5 id="a-bit-political-stings-can-emerge-even-worse">A bit political stings can emerge even worse.</h5>
+<p>Probably this is the worst part in a harmony of engineering life, but it does happen…kind of easy in real life example. I mean no one is originally trying to bully a junior by intimidating him/her to do A or B,  or to show off how fancy Streaming in Java 9 or how solid Promise in ES6 to save all legacy callback hell. But once this loop starts rolling on the road, it hardly has an immediate stop without coming back and forth. And in my experience, It’s such a waste to get distracted from getting more important things done, how about we just even have a beer then have a kickback in the cafe area? I really want, sometimes.</p>
+
+<h5 id="security-review-is-often-undervalued-and-bite-us-back">Security review is often-undervalued and bite us back</h5>
+<p>We always take pride a lot as owning “Security is a first” as engineering creed here. We can’t just follow behind Transunion, not even need to mention tech giant — Facebook.(Sorry, my friend in FB lol…you’re not on the third-party API team though.) When it comes to code review, however, developers are inclined to have a mindset like a gang of hackers inadvertently crack things down and fix it up in the build pipeline, and even feeling awesome which is a classical false impression for software engineer, especially  not-well-seasoned ones. but we need to be tougher on sausage-baking process in case of owning security compliance  (we do have our internal security guideline for engineering teams). Self-defending code is always good even it’s not in very lean and smart way.</p>
+
+<h5 id="lower-documentation-coverage-is-what-triggers-confusion">Lower documentation coverage is what triggers confusion</h5>
+<p>Reduce more explicit question in the comments and drag a big conversation frequently. Especially a huge benefit for new hire (or one is not much involved with a certain product’s recent feature, but is a member of PR’s approval list), In my opinion, good coder could have been writing down the clear technical specs such as architecture design doc/key defects report and etc, based upon our code style guidance.</p>
+
+<p>There are several basic ideas came out of my mind and I think it’s noteworthy following it at least myself:<br />
+1. Focus on the code itself but ignore who wrote the code.<br />
+2. Raise kind question without sarcastic/joke attitude to make a suggestion.<br />
+3. Keep conversation as lean as possible but also informational. (Make this meaningful…)<br />
+4. Implement Code Lint tools (We are considering SonarQube integrated into Gitlab pipeline after 2 weeks I wrote this post. Yah!)<br />
+5. Encourage team members to get some data or insights through the code review and expand transparency, which could possibly reduce process shit in the long run.</p>
+
+<p>From PO’s point of view, It’s likely getting highly subjective things to evaluate the incentives that development team deliver. Are we still great software engineers if we ship the sloppy hacky code when we don’t have too much runway? or we are just sticking around the standards by writing beautiful code given loads of time.<br />
+<img src="https://jameelnabbo.com/wp-content/uploads/2018/05/1_nxXw5ViikNF2tIzIs21qlw-1000x559.png" alt="bless code review" /></p>
+
+<p>There are tons of solid materials could be a gold guide, I mean generally for code reviews in most cases. But I am not going to draft a email with a long list of hyperlinks then spread to the team. (I know it doesn’t always work even if you do a funny engineering survey or questionnaire.) I want to figure out why and really talk to key team members and discuss a viable approach for us.</p>
+
+        <div id="disqus_thread"></div><!-- /#disqus_thread -->
+      </div><!-- /.entry-content -->
+    </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="/blog/Thoughts_about_Google_Material_Design/" class="btn" title="Thoughts about Google Material Design">Previous</a>
+      
+      
+    </nav><!-- /.pagination -->
+  </article>
+</div><!-- /#main -->
+
+<div class="footer-wrapper">
+  <footer role="contentinfo" class="entry-wrapper">
+    
+
+
+
+<div class="animated fadeIn" style="text-align: center">
+  <a href="https://twitter.com/Jeremy23_Zen" title="Jeremy Li on Twitter" target="_blank"><i class="fa fa-twitter-square fa-3x"></i></a>
+  <a href="https://linkedin.com/in/Jeremyli23" title="Jeremy Li on LinkedIn" target="_blank"><i class="fa fa-linkedin-square fa-3x"></i></a>
+  <a href="https://github.com/Jeremygarden" title="Jeremy Li on Github" target="_blank"><i class="fa fa-github-square fa-3x"></i></a>  
+</div>
+
+<button id="toTop" style="display: block;"> <i class="fa fa-angle-double-up fa-5x"></i> </button>
+<div><span>&copy; 2019 .<i class="fa fa-heartbeat blood"></i>&nbsp;Jeremy Li. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a>.</span></div>
+
+  </footer>
+</div><!-- /.footer-wrapper -->
+
+
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="/assets/js/scripts.min.js"></script>
+<script src="/assets/js/plugins/typed-custom.js"></script>
+
+
+
+
+<script>
+
+$(document).ready(function(){
+
+  $("#toTop").hide();
+  $(window).scroll(function(){
+
+    if( $(this).scrollTop() > 1000 ) {
+        $("#toTop").fadeIn("slow");
+        $("body").addClass("darken");
+    }else{
+        $("#toTop").fadeOut("slow");
+        $("body").removeClass("darken");
+    }
+});
+
+$("#toTop").click(function(event){
+        
+        $('body').animate({scrollTop : 0 } , 600);
+        return false;
+    });
+
+
+});
+
+
+
+
+//smoothScroll
+
+$('a[href^="#"]').on('click', function(event) {
+
+    var target = $( $(this).attr('href') );
+
+    if( target.length ) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: target.offset().top
+        }, 1000);
+    }
+
+});
+
+//  ** typed.js Thanks matt! **
+
+$(function(){
+  $(".welcomeText").empty();
+  $(".welcomeText").typed({
+    strings: ["Hello,", "你好,", "Bonjour,", "¡Hola!", "안녕,", "Ciào,"],
+        typeSpeed: 45, // typing speed
+        backDelay: 650, // pause before backspacing
+        loop: true, // loop on or off (true or false)
+        loopCount: false, // number of loops, false = infinite
+      });
+});
+
+function cursorAnimation() {
+    $('.typed-cursor').animate({
+        opacity: 0
+    }, 'fast', 'swing').animate({
+        opacity: 1
+    }, 'fast', 'swing');
+};
+</script>
+<!-- Jekyll Simple Search option -->
+<script>
+  $(document).ready(function() {
+      $('.search-field').jekyllSearch({
+          jsonFile: '/search.json',
+          searchResults: '.search-results',
+          template: '<li><article><a href="{url}">{title} <span class="entry-date"><time datetime="{date}">{shortdate}</time></span></a></article></li>',
+          fuzzy: true,
+          noResults: '<p>Nothing found.</p>'
+        });
+  });
+
+  (function( $, window, undefined ) {
+    
+     var bs = {
+          close: $(".close-btn"),
+          searchform: $(".search-form"),
+          canvas: $(".js-menu-screen"),
+          dothis: $('.dosearch')
+      };
+    
+    bs.dothis.on('click', function() {
+      $('.search-wrapper').css({ display: "block" });
+      $('body').toggleClass('no-scroll');
+      bs.searchform.toggleClass('active');
+      bs.searchform.find('input').focus();
+      bs.canvas.toggleClass('is-visible');
+    });
+    
+      bs.close.on('click', function() {
+        $('.search-wrapper').removeAttr( 'style' );
+        $('body').toggleClass('no-scroll');
+        bs.searchform.toggleClass('active');
+        bs.canvas.removeClass('is-visible');
+    });
+  })( jQuery, window );
+
+</script>
+
+
+
+<!-- nav scroll snippet -->
+<script>
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('nav').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('nav').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('nav').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+</script>
+
+
+
+  
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'jeremyleexyz'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+	        
+
+</body>
+</html>

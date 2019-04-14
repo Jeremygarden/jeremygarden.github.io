@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>/blog/Code_review_thoughts/</loc>
+    <lastmod>2018-11-16T00:00:00-05:00</lastmod>
+  </url>
+  <url>
     <loc>/blog/Thoughts_about_Google_Material_Design/</loc>
     <lastmod>2015-12-17T00:00:00-05:00</lastmod>
   </url>
   <url>
-    <loc>/blog/Git%20common%20use/</loc>
+    <loc>/blog/Git_common_use/</loc>
     <lastmod>2015-11-21T00:00:00-05:00</lastmod>
   </url>
   <url>

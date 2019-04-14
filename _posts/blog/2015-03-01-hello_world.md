@@ -8,8 +8,6 @@ tags: [Life, Note]
 modified:
 image:
   feature: mushroom.jpg
-  <!-- credit: WeGraphics -->
-  <!-- creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/ -->
 share: true
 comments: true
 ---
