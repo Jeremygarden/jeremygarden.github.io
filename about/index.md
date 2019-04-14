@@ -14,7 +14,8 @@ My name is **Jeremy** and I love new, upcoming technology. I'm currently a candi
 
 * Fluent in speaking **English**, with native **Mandarin Chinese**
 * Enjoy **Reading and Photography** , and staying updated with the latest technologies
-* Also a true sport fanatic, probably stop coding and thinking if a perfectly prime rib is just placed in front of me. 
+* A Celetics fan, also can't stop showing love with a beautiful piece of Ribeye.
+* Getting addiction to snowboarding (Riding Yes Greats.Uninc 156 around New England's when getting a POW day...) 
 
 
 ## Contact Me:
@@ -28,5 +29,3 @@ Below is my email as well as the links to my social sites, feel free to contact 
 
 <p><i class="fa fa-envelope-o fa-fw"></i>&nbsp;<a href="javascript:void(0)">li.mingxuan623@gmail.com</a></p>
 
-
-[^1]: Example: *domain.com/category-name/post-title*

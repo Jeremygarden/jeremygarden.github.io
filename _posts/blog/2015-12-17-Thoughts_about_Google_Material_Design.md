@@ -16,6 +16,7 @@ comments: true
 
 Recently I heard of the Google Material Design, the most hot and famous design Bible. So I went through the most part of it on my iPad at some toilet time...
 
+![Google material design](https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2015/03/materialdesign-730x315.jpg)
 
 At the first glance, I didn't pay much attention to what it defines about itself and how to demostrate the essentials of it. Honestly, I don't even feel like how superior the Google designers represent their thought on the web pages, Instead I like the way less bolder about color sets, richer but no-obvious interactions on user end. I think that is funnier because at one time I am freaking into Online RPG games. So I wouldn't give a shit if I will be a Head of design team, seriously. Sorry for any fans of Material Design if you check out this post.
 
