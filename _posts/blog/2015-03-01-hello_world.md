@@ -24,13 +24,13 @@ A well-made product with hybrid background and attributes from the Northwest hig
 
 But I am not that glommy,though. I just love the moments that I am able to quiet down and chill with myself by classic music.
 
-Except achohol, there must be something else drive guys crazy. For me, I would say ball games and driving. A true sport fanatic. I was a SG(Shooting Guard) till I graduated from high school. After that, I play badminton, tennies and 8-balls pool. You say Ping-pong? Damn, you know where I come from. 
+Except achohol, there must be something else drive guys crazy. For me, I would say ball games and driving. A true sport fanatic. I was a SG(Shooting Guard) till I graduated from high school. After that, I play badminton, tennis and 8-balls pool. You say Ping-pong? Damn, you know where I come from. 
 
 Enough to digress from my serious intro...
 
-I pursued my Master Degree in Northeastern Univesity, Boston. My major is Information Systems(formerly Computer Engineering). My interests and focus are mainly about web development including up-to-date web frameworks, UI/UX design, also a bit of mechine learning and data mining. 
+I pursued my Master Degree in Northeastern Univesity, Boston. My major is Information Systems(formerly Computer Engineering). My technical interests and focus are mainly about front-end development including up-to-date modern frameworks, UI/UX design, plus a bit amateur skill of mechine learning and data mining. But I'm also comfortable with Java and Spring MVC, SQL and etc. 
 
-I like the feelings pretty much when I fixs some problems, get something "Unchecked" done and keep learning something new. The curiousity makes me alive in a long run. I probably stop coding if a perfectly prime rib is just placed in front of my face. However, I try my best to not be a code monkey, but the one who knows critical thinking, co-operating with teams and embracing the change. 
+I like the feelings pretty much when I fixs some problems, get something "Unchecked" done and keep learning something new. The curiousity makes me alive in a long run. I probably stop coding if a perfectly prime rib is just placed in front of my face. However, I try my best to not be a code monkey, but the one who really understands about critical thinking, collaboration with teams, full empathy for users and embracing unpredictable changes. 
 
 
 I hope I will be able to design and develop a nice online product with my friends some day. 

@@ -1,13 +1,12 @@
 ---
 layout: page
 title: About Me
-excerpt: "So Simple is a responsive Jekyll theme for your words and images."
 image:
   feature: sunset.jpg
 
 ---
 
-My name is **Jeremy** and I love new, upcoming technology. I'm currently a candidate for M.S **Information Systems** at the **Northeastern University, Boston**. I enjoy developing and learning about all forms of software to MAKEING AND DOING, especially concerntrate on the cutting-edge web tech and design beautiful internet things on human-centerd side for other's better life.
+My name is **Jeremy** and I love new, upcoming technology. I currently work as Software Engineer around Boston area and graduated as M.S in **Information Systems** at the **Northeastern University, Boston**. I enjoy developing and learning about all forms of software technologies to MAKEING AND DOING, especially concerntrate on the cutting-edge web tech and design beautiful internet of things on human-centerd side for other's better life. With half Product brain and half Engineer brain, my adventure is just beginning...can't wait what will happen in the next Chapter of my life.
 
 
 ## Quick Facts:
