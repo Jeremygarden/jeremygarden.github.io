@@ -1,0 +1,121 @@
+.portfolio-wrapper {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -moz-flex-direction: column;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 80px;
+  position: relative;
+  padding: 0 15px !important;
+  @include media($large) {
+    -moz-flex-direction: row;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .columns {
+    display: -moz-flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    -moz-flex-direction: column;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 90%;
+    @include media($large) {
+      margin: 0 15px;
+      width: calc(100% / 3);
+    }
+  }
+  .portfolio-card {
+    border-bottom: none;
+    border-radius: 4px;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.075);
+    cursor: pointer;
+    display: block;
+    margin: 0 0 30px 0;
+    text-align: center;
+    outline: 0;
+    overflow: hidden;
+    width: 100%;
+    -moz-transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    &:hover {
+      box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25), 0 0 0.5em 0 #999999;
+    }
+
+    .img-wrapper {
+      overflow: hidden;
+    }
+
+    .img-card {
+      background: #ffffff center center no-repeat;
+      background-size: cover;
+      filter: blur(3px);
+      position: relative;
+      opacity: 0;
+      transform: translateY(100%);
+      transition: all 1.5s ease-out;
+
+      img {
+        display: block;
+        width: 100%;
+        opacity: 0;
+      }
+
+      &.is-visible {
+        transform: translateY(0);
+        opacity: 1;
+      }
+
+      &.is-loaded {
+        filter: none; //transition: filter 1s;
+      }
+    }
+  }
+}
+
+.portfolio-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding: 0 20px;
+  padding-top: 65px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 10;
+  .modal-close {
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  .modal-wrapper {
+    background-color: #ffffff;
+    height: 100%;
+    margin-bottom: 60px;
+    padding-top: 45px;
+    z-index: 99;
+    img {
+      display: block;
+      max-width: 100%;
+      //width: 100%;
+    }
+  }
+}
