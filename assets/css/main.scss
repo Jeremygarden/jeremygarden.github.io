@@ -1,10 +1,7 @@
 ---
 sitemap: false
 ---
-
-
-// Partials
-
+ // Partials
 @import "variables";
 @import "vendor/bourbon/bourbon";
 @import "grid-settings";
@@ -16,9 +13,6 @@ sitemap: false
 @import "forms";
 @import "layout";
 @import "vendor/font-awesome/font-awesome";
-
 @import "vendor/magnific-popup/magnific-popup";
 @import "simple-search";
-
-
-
+@import "portforlio";
