@@ -187,17 +187,17 @@
           <p>K-nearest Neighbors</p>
           <img src="/images/yelp_chart2.png" alt="">
           <p>Confusion Matrix</p>
-          <img src="/images/yelp_4.png" alt="">
+          <img src="/images/yelp_chart4.png" alt="">
           <code>
             # import library
-            from pandas import *
-            # generate x: is the array of attributes
-            # generate correlation table and print graph
+            from pandas import * <br>
+            # generate x: is the array of attributes <br>
+            # generate correlation table and print graph <br>
             df = DataFrame(data=x, columns=['longitude','latitude','review_count','Price Range','Noise Level','Accepts Credit Cards','Take-out','Delivery','Wheelchair Accessible','Takes Reservations'])
-            print df.columns.values.tolist()
-            cor_matrix = np.corrcoef(df.T)
-            sm.graphics.plot_corr(cor_matrix,xnames=df.columns.values.tolist())
-            plt.savefig("f”)
+            print df.columns.values.tolist() <br>
+            cor_matrix = np.corrcoef(df.T) <br>
+            sm.graphics.plot_corr(cor_matrix,xnames=df.columns.values.tolist()) <br>
+            plt.savefig("f”) <br>
           </code>
           <p>Takeaways</p>
           <p>we are able to improve the accuracy from around 45% ~ 50% at the beginning up to around 97% at least. Particularly while dividing target rating range into two categories, Naive bayes, KNN and SVM gave relatively better results other than decision tree.</p>
