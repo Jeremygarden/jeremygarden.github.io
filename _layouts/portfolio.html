@@ -11,7 +11,7 @@
 
 {% include navigation.html %}
 
-<div id="main" role="main">
+<div id="main" role="main" class="portfolio_main">
   <div class="container container-alt">
     <div class="row text-center">
       <section class="col-sm-12 portfolio-wrapper">
@@ -185,9 +185,9 @@
           <p>Logistic regression</p>
           <img src="/images/yelp_chart3.png" alt="">
           <p>K-nearest Neighbors</p>
-          <img src="/images/yelp_chart2.png" alt="">
+          <img src="/images/yelp_chart2.png" width="65%" height="auto" alt="">
           <p>Confusion Matrix</p>
-          <img src="/images/yelp_chart4.png" alt="">
+          <img src="/images/yelp_chart4.png" width="65%" height="auto" alt="">
           <code>
             # import library
             from pandas import * <br>
@@ -199,6 +199,7 @@
             sm.graphics.plot_corr(cor_matrix,xnames=df.columns.values.tolist()) <br>
             plt.savefig("f”) <br>
           </code>
+          <hr>
           <p>Takeaways</p>
           <p>we are able to improve the accuracy from around 45% ~ 50% at the beginning up to around 97% at least. Particularly while dividing target rating range into two categories, Naive bayes, KNN and SVM gave relatively better results other than decision tree.</p>
           <p>By limiting 10,000 records from "review.json"(due to CPU performance concern) as also operate analysis the score of every single review record item. If the score is positive, we consider the target star
@@ -214,10 +215,22 @@
       <div class="row">
         <div class="col-sm-12 modal-wrapper">
           <img src="/images/appsec.png" alt="">
-          <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit</h3>
+          <h3>Tracking Security Flaws from Codebase on Mobile </h3>
           <hr>
-          <p>Nullam fringilla lorem eu metus facilisis, quis lobortis justo vulputate. Nullam interdum odio vel lorem tempus porta. Sed tincidunt eros arcu, non rutrum ligula pulvinar eget.</p>
-          <p>Proin in rutrum risus, a imperdiet nulla. Nullam mattis mattis enim, ut malesuada tellus venenatis non. In commodo posuere ipsum vitae mattis. Maecenas volutpat tortor odio, vel venenatis velit facilisis id. Fusce ac lectus pulvinar, tempus mauris at, commodo mi.</p>
+          <h5>Problem</h5>
+          <p>Enterprises software and technological buiness are encounting the most sereve security threats from various defects and flaws from their applications. This has been likely much underestimated widely in the whole industry as you can see a bunch of well-known companies became the victim of hundreds lines of flawed codes.</p>
+          <h5>Goal</h5>
+          <p>There is no perfect software design and bullet-proof fortification. But we'd better start working on minimum amount of defective data, track them, monitor them and fix them with help of security experts</p>
+          <p>Approach</p>
+          <ul>
+            <li>Schedule technical appointment</li>
+            <li>Customized Configuration</li>
+            <li>View detailed flaw info with ease</li>
+            <li>Checking trending chart in certain timeframe </li>
+          </ul>
+          <p>Screenshots</p>
+          <img src="/images/sec1.png" alt="">
+          <img src="/images/sec2.png" alt="">
         </div>
       </div>
     </div>
