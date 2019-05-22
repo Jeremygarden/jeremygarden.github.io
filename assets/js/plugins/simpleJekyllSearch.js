@@ -25,7 +25,7 @@
         if(settings.jsonFile.length && searchResults.length){
             $.ajax({
                 type: "GET",
-                url: settings.jsonFile,
+                url: "https://jeremyli.space/search.json",
                 dataType: 'json',
                 success: function(data, textStatus, jqXHR) {
                     jsonData = data;

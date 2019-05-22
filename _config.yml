@@ -8,7 +8,7 @@ me: me.jpg
 search: true
 
 # Jekyll configuration
-
+url:         "https://jeremyli.space"
 permalink:   /:categories/:title/
 markdown:    kramdown
 kramdown:
