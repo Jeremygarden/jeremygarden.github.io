@@ -9,7 +9,7 @@ modified:
 image:
   feature: mushroom.jpg
   <!-- credit: WeGraphics -->
-  <!-- creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/ -->
+  <!-- creditlink: https://wegraphics.net/downloads/free-ultimate-blurred-background-pack/ -->
 share: true
 comments: true
 ---
