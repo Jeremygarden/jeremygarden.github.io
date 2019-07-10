@@ -2,7 +2,7 @@
 layout: post
 title: "Takeaways from TripAdvisor Data Science PM @Product School Boston"
 author: me
-excerpt: " "
+excerpt: "Some Fresh Thoughts"
 categories: blog
 tags: [PM]
 modified:
@@ -17,8 +17,9 @@ comments: true
 
 Takeaways from TripAdvisor Data Science PM @Product School Boston
 
-
 ![@PS Boston](https://assets.productschool.com/wp-content/uploads/2018/07/05160936/productschool_logo-productcon.png)
+
+
 I went to the well-known meetup called Product School last week. I believe I first got hooked with it via my podcast app, where A lot of PMs share a handful great experiences and how they build/ship products. Also checked out a bunch on Youtube as they did kind of streaming or recording some times. Then I found out they host a event with Tripadvisor in Boston this time, Always want to hear some more mixed voice from Tripadvisor product side on what they are doing and how they catch up with in the market, so just can't miss and need to be around there.
 
 It started off diving into DS to some extent which is great. Engineer-oriented always get a solid foundation :) , what's more is helping me to brush up a bit of DS I did before in the past, like outliers, overfitting, ML algorithms, cross validation all kind of fun stuffs. But after knowing their users and personas, I got a BIG question, 
