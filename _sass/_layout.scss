@@ -335,7 +335,7 @@ span + .entry-title {
 }
 // Pagination
 .pagination {
-  margin-top: 2em;
+  margin-top: -1.5em;
   text-align: center;
 }
 // Page layout
@@ -451,7 +451,7 @@ span + .entry-title {
 
 .footer-wrapper {
   @include clearfix;
-  margin: 3em auto 1em;
+  margin: 7em auto 1em;
 
   text-align: center;
   height: 70px;
