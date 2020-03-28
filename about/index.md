@@ -14,7 +14,7 @@ My name is **Jeremy** and I love new, upcoming technology. I currently work as S
 * Fluent in speaking **English**, with native **Mandarin Chinese**
 * Enjoy **Reading and Photography** , and staying updated with the latest technologies
 * A Celetics fan, also can't stop showing love with a beautiful piece of Ribeye.
-* Getting addiction to snowboarding (Riding Yes Greats.Uninc 156 around New England's when getting a POW day...) 
+* Getting addicted to snowboarding (Riding Yes Greats.Uninc 156 around New England's when getting a POW day...) 
 
 
 ## Contact Me:
